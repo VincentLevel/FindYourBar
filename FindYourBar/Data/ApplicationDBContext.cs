@@ -12,6 +12,8 @@ namespace FindYourBar.Data
 
         public DbSet<Bar> Bar { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

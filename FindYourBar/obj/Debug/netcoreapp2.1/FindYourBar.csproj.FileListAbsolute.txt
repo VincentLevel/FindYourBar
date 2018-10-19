@@ -30,3 +30,4 @@ C:\Users\Vincent\source\repos\FindYourBar\FindYourBar\obj\Debug\netcoreapp2.1\Fi
 C:\Users\Vincent\source\repos\FindYourBar\FindYourBar\obj\Debug\netcoreapp2.1\FindYourBar.dll
 C:\Users\Vincent\source\repos\FindYourBar\FindYourBar\obj\Debug\netcoreapp2.1\FindYourBar.pdb
 C:\Users\Vincent\source\repos\FindYourBar\FindYourBar\obj\Debug\netcoreapp2.1\FindYourBar.csproj.CopyComplete
+C:\Users\Vincent\source\repos\FindYourBar\FindYourBar\obj\Debug\netcoreapp2.1\Razor\Views\User\Register.g.cshtml.cs
