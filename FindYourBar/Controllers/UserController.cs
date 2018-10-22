@@ -27,7 +27,6 @@ namespace FindYourBar.Controllers
         public IActionResult Register()
         {
             return View();
-
         }
 
         [HttpPost]
@@ -55,9 +54,44 @@ namespace FindYourBar.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(RegisterViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+
+                User user = await _userManager.FindByNameAsync(viewModel.UserName);
+                if(user == null)
+                {
+                    return View();
+                }
+                else
+                {
+                    var result = await _signInManager.PasswordSignInAsync(user, viewModel.Password, false, false);
+                    if (result.Succeeded)
+                    {
+                        return Redirect("/");
+                    }
+                    else
+                    {
+                        return View();
+                    }
+                }
+  
+            }
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
         }
+
     }
 }
