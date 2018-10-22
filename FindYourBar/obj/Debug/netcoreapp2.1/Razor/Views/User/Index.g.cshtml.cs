@@ -65,7 +65,7 @@ using FindYourBar.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(72, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9a08831d0d54d02a7d887e95313e69d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c720278496d4249b5a6fe074939cff7", async() => {
                 BeginContext(121, 8, true);
                 WriteLiteral("Add User");
                 EndContext();
@@ -88,7 +88,7 @@ using FindYourBar.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(139, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c7335a39d6946b9ba8addd93db252f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88bbd9e3c3c843bfa410c3c9c03ce66a", async() => {
                 BeginContext(185, 5, true);
                 WriteLiteral("Login");
                 EndContext();

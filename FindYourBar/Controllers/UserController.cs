@@ -7,6 +7,7 @@ using FindYourBar.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using FindYourBar.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FindYourBar.Controllers
 {
@@ -66,7 +67,6 @@ namespace FindYourBar.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 User user = await _userManager.FindByNameAsync(viewModel.UserName);
                 if(user == null)
                 {
@@ -92,6 +92,15 @@ namespace FindYourBar.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect("/");
+        }
+
 
     }
 }
